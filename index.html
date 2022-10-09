@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Weather Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-primary" id="nav">
+            <a href="index.html"><i class="bi bi-cloud-sun"></i>  Weather Dashboard  <i class="bi bi-cloud-sun"></i></a>
+    </nav>
+
+    <!-- Container -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+
+                <!-- Search form -->
+                <div class="row">
+                    <form class="form-inline my-2 my-sm-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search for a City!" aria-label="Search" id="searchCity">
+                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="bi bi-cloud-sun"></i></button>
+                    </form>
+                    <div class="row" id="savedSearch">
+                        <div class="card" style="width: 18rem;" id="buttonsList">
+                            <!-- Buttons of previous searches are here -->
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <!-- Current Weather -->    
+            <div class="col-lg-8" id="allWeather">
+                <div class="row" id="weatherCard">
+                    <div class="card" id="displayCard">
+
+                        <div class="row">
+
+                            <div class="col-lg-6">
+                                <div class="card-body" id="card">
+                                    <h2 class="card-title" id="city"></h2>
+                                    <p class="card-text" id="temp"></p>
+                                    <p class="card-text" id="tempDescription"></p>
+                                    <p class="card-text" id="humidity"></p>
+                                    <p class="card-text" id="wind"></p>
+                                    <p class="card-tet" id="uvIndex"></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4" id="mainIcon">
+                                <!-- Main Icon -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- 5 Day Forecast -->
+                <div class="row" id="forecastRow"></div>
+
+                <div class="row" id="cardsRow">
+                    <!-- Cards Goes Here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="col-12">
+            <hr/> <!-- Bootstrap divider -->
+        </div>
+ 
+      
+    </footer>
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
