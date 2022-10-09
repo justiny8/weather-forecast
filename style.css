@@ -1,0 +1,36 @@
+a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#nav {
+    justify-content: center;
+    color: white;
+}
+
+.form-inline {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#buttonsList {
+    padding-left: 20px;
+}
+
+#allWeather {
+    padding-top: 20px;
+}
+
+#forecastRow {
+    padding-top: 20px;
+}
+
+#cardsRow {
+    padding-top: 20px;
+}
+
+footer {
+    text-align: center;
+}
